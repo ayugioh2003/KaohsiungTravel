@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI計算</title>
+  <link rel="stylesheet" href="./scss/cssreset.css">
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+  <section class="calc">
+    <div class="container flex-container">
+      <img src="./images/BMICLogo.png" class="logo" width="117" height="117" alt="">
+      <div class="inputs">
+        <div>
+          <label for="kg" class="inputs__label">體重 kg</label>
+          <input type="text" class="inputs__text kg" id="kg">
+        </div>
+        <div>
+          <label for="cm" class="inputs__label">身高 cm</label>
+          <input type="text" class="inputs__text cm" id="cm">
+        </div>
+      </div>
+      <div class="btn inline-block">
+        <div class="btn__text">看結果</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bmilogs">
+    <div class="container">
+      <h2 class="logs-title">BMI 記錄</h2>
+      <ul class="logs"></ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <img src="./images/BMICLogo.png" width="30px" height="30px" alt="">
+    </div>
+  </footer>
+
+  <script src="./js/all.js"></script>
+</body>
+
+</html>

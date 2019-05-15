@@ -1,0 +1,100 @@
+---
+title: 高雄旅遊資訊
+layout: ./source/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- header -->
+<div class="container-fluid header">
+  <header class="container text-center">
+    <h1 class="text-white py-6">
+      <a class="text-white" href="#">高雄旅遊資訊</a>
+    </h1>
+    <form>
+      <div class="form-row align-items-center justify-content-center">
+        <div class="col-md-6 my-1">
+          <select class="custom-select mr-sm-2 select" id="inlineFormCustomSelect">
+            <!-- option demo, 之後會被 JS 語法產生的元件覆蓋 -->
+            <option selected>--請選擇行政區--</option>
+            <option value="三民區">三民區</option>
+            <option value="新興區">新興區</option>
+            <option value="鹽埕區">鹽埕區</option>
+          </select>
+        </div>
+    </form>
+  </header>
+</div>
+
+<!-- main -->
+<div class="main container-fluid">
+  <!-- main > 熱門行政區 -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 hot py-2 border border-light rounded bg-white">
+        <div class="py-2">熱門行政區</div>
+        <div class="d-flex flex-wrap">
+          <button type="button" class="ml-3 mb-1 px-5 py-1 btn btn-lg btn-primary">苓雅區</button>
+          <button type="button" class="ml-3 mb-1 px-5 py-1 btn btn-lg btn-secondary">三民區</button>
+          <button type="button" class="ml-3 mb-1 px-5 py-1 btn btn-lg btn-success">新興區</button>
+          <button type="button" class="ml-3 mb-1 px-5 py-1 btn btn-lg btn-danger">鹽埕區</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mian > line -->
+  <div class="container divide mb-6">
+    <div class="divide-line my-2 text-center">
+      <img class="divide-down" src="./images/icons_down.png" alt="">
+    </div>
+  </div>
+  <!-- main > area -->
+  <div class="container area mb-5">
+    <div class="area-name h1 text-center mb-3">載入中</div>
+    <div class="row area-lists ">
+
+      <!-- 用 JS 塞入 card-->
+
+    </div>
+  </div>
+  <!-- main > pagination -->
+  <div class="container mb-5">
+    <nav class="d-flex justify-content-center" aria-label="...">
+      <ul class="pagination">
+
+        <!-- <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&lt; prev</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">next &gt;</a>
+        </li> -->
+
+      </ul>
+    </nav>
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="container-fluid py-3 bg-info text-center">
+  <div class="text-white mb-2">
+    高雄旅遊網
+  </div>
+  <div >
+    <a class="text-warning" href="https://data.kcg.gov.tw/dataset/attractions-information">資料來源：高雄市政府</a>
+  </div>
+</footer>
+<!-- footer END -->
+
+<a class="scrollToTop" href="#">
+  <img src="./images/btn_goTop.png" alt="">
+</a>

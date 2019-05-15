@@ -1,0 +1,80 @@
+// 需要載入的
+@import "functions";
+@import "./helpers/_variables";
+@import "bootstrap";
+
+$bg-color: #f7f7f7;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 400px;
+  background: url(../images/the-urban-landscape-1698285.png) no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  .select {
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+  }
+}
+
+.main {
+  background-color: $bg-color;
+
+  .hot {
+    transform: translateY(-2rem);
+    box-shadow: 1px 2px 2px 1px rgb(200, 200, 200);
+  }
+  .divide {
+    &-line {
+      border-bottom: 2px dashed #559ac8;
+    }
+    &-down {
+      transform: translateY(10px);
+      padding: 2px;
+      background-color: $bg-color;
+      // border: 1px solid #559ac8;
+      // border-radius: 50%;
+    }
+  }
+  .area {
+    &-name {
+      color: #8a82cc;
+    }
+  }
+  .card {
+    &-head {
+      position: relative;
+    }
+    &-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: .5rem 2rem;
+      background-color: rgba(255, 255, 255, 0.6); 
+    }
+  }
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 100px;
+  right: 3%;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// 通用
+@import "components/utilities";

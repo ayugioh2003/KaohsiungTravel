@@ -1,0 +1,122 @@
+$primary-color: #FFD366;
+$dark-color: #424242;
+
+$light-color: #31BAF9;
+$fit-color: #86D73F;
+$fat-color: #FF982D;
+$fat-super-color: #FF1200;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+// ---- util
+small {
+  font-size: .4rem;
+}
+.container {
+  min-width: 320px;
+  max-width: 624px;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+
+// section - calc
+.calc {
+  padding: 3rem 0;
+  background-color: $dark-color;  
+}
+.logo {
+  transform: translateX(-120px);
+  filter: drop-shadow(120px 0 0 #FFD366);
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+
+  &__label {
+    display: block;
+    margin-bottom: .5rem;
+    color: $primary-color;
+  }
+  &__text {
+    width: 100%;
+    height: 25px;
+    padding-left: 1rem;
+    border-color: $primary-color;
+    border-radius: 10px;
+    border-width: 2px; 
+    background-color: rgba(255,255,255,0.18);
+    color: rgb(204, 204, 204);
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+.btn {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: $primary-color;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: $dark-color;
+  }
+}
+
+// section - bmilogs
+.bmilogs {
+  min-height: calc(100vh - 216px - 64px);
+  padding-bottom: 3rem;
+  background-color: #f5f5f5;
+}
+.logs-title {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.logs {
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding: 1rem .5rem;
+    border-left: 7px solid gray;
+    background-color: #fff;
+    color: #4A4A4A;
+
+    &.light { border-left: 7px solid $light-color; }
+    &.fit { border-left: 7px solid $fit-color; }
+    &.fat { border-left: 7px solid $fat-color; }
+    &.fat-supur { border-left: 7px solid $fat-super-color; }
+
+    span {
+      width: 20%;
+    }
+  }
+}
+
+// section - footer
+.footer {
+  padding: 1rem;
+  background-color: $primary-color;
+}
