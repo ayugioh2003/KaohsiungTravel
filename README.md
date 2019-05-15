@@ -17,7 +17,7 @@ cd KaohsiungTravel
 cd travel
 npm install
 gulp # 開發
-gulp buile # 編譯檔案
+gulp build # 編譯檔案
 ```
 
 ## 高雄旅遊資訊
