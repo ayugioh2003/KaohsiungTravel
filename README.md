@@ -17,16 +17,16 @@ cd KaohsiungTravel
 cd travel
 npm install
 gulp # 開發
-gulp build # 編譯檔案
+gulp build. # 編譯檔案
 ```
 
 ## 高雄旅遊資訊
 
 ![高雄旅遊資訊](https://i.imgur.com/xpIlEmS.png)
 
-使用/技術
+使用/學習的技術
 * HTML5、EJS
-* CSS3、BootStrap
+* CSS3、SCSS、BootStrap
 * ES6、AJAX
 * Gulp
 
@@ -34,10 +34,10 @@ gulp build # 編譯檔案
 
 ![BMI](https://i.imgur.com/cATkAUm.png)
 
-使用/技術
+使用/學習的技術
 * HTML
 * CSS
-* JS，localstorage
+* JS，localStorage
 
 
 ## 聲明
